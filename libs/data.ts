@@ -2,6 +2,7 @@ export const tiers = [
   {
     name: "Trial",
     monthlyPrice: "Try now",
+
     annualPrice: "Free",
     features: [
       "25+ data source",
@@ -15,8 +16,10 @@ export const tiers = [
   {
     name: "Growth",
     monthlyPrice: "$299",
-    badge: "50% off",
     annualPrice: "$2,990",
+    originalMonthlyPrice: "$598",
+    originalAnnualPrice: "$5,980",
+    badge: "50% off",
     features: [
       "8,000 Credits",
       "Webhook, HTTP API",
@@ -34,8 +37,10 @@ export const tiers = [
   {
     name: "Booster",
     monthlyPrice: "$499",
-    badge: "50% off",
     annualPrice: "$4,990",
+    originalMonthlyPrice: "$998",
+    originalAnnualPrice: "$9,980",
+    badge: "50% off",
     features: [
       "25,000 Credits",
       "Webhook, HTTP API",
