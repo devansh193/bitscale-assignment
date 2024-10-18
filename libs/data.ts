@@ -1,0 +1,73 @@
+export const tiers = [
+  {
+    name: "Trial",
+    monthlyPrice: "Try now",
+    annualPrice: "Free",
+    features: [
+      "25+ data source",
+      "GPT4, LinkedIn and others",
+      "Access to slack community",
+      "10+ templates to scale your outbound",
+    ],
+    features2: ["Explore product capabilities"],
+    cta: "Try Now",
+  },
+  {
+    name: "Growth",
+    monthlyPrice: "$299",
+    badge: "50% off",
+    annualPrice: "$2,990",
+    features: [
+      "8,000 Credits",
+      "Webhook, HTTP API",
+      "Credit rollover(upto 2x plan credits)",
+      "Outbound email integrations like Instantly, Smartlead.",
+      "Dedicated 3 hours from Bitscale expert.",
+    ],
+    features2: [
+      "Explore product capabilities",
+      "Fully enriched 5000 leads",
+      "Personalized outreach at scale",
+    ],
+    cta: "Continue with Growth",
+  },
+  {
+    name: "Booster",
+    monthlyPrice: "$499",
+    badge: "50% off",
+    annualPrice: "$4,990",
+    features: [
+      "25,000 Credits",
+      "Webhook, HTTP API",
+      "Credit rollover(upto 2x plan credits)",
+      "Outbound email integrations like Instantly, Smartlead.",
+      "Dedicated 3 hours from Bitscale expert.",
+      "Advanced models like Claude Sonnet",
+      "Dedicated 8 hours from Bitscale expert",
+      "2 way Hubspot integration",
+    ],
+    features2: [
+      "Unlimited leads search",
+      "Fully enriched 15000 leads",
+      "Personalized outreach at scale",
+    ],
+    cta: "Continue with Booster",
+  },
+  {
+    name: "Enterprise",
+    monthlyPrice: "Contact Us",
+    annualPrice: "Contact Us",
+    features: [
+      "Data privacy certification",
+      "Priority Support",
+      "Dedicated Bitscale expert",
+      "Private Slack Channel",
+      "Collaborative workspace and templates",
+    ],
+    features2: [
+      "Perfect for High-Volume End-to-End CRM Data Enrichment",
+      "Unlimited list of leads with unlimited data points",
+    ],
+    cta: "Try Now",
+  },
+];
