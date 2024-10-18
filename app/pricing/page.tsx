@@ -16,6 +16,7 @@ import {
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
+// data coming from /lib/data file.
 import { tiers } from "@/libs/data";
 
 export default function PricingPage() {
@@ -26,6 +27,7 @@ export default function PricingPage() {
   return (
     <div className="container mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold text-center mb-8">Pricing Plans</h1>
+      {/* Tabs to switch between monthly and annually pricing. */}
       <Tabs defaultValue="monthly" className="w-full mb-8">
         <TabsList className="grid w-full max-w-md grid-cols-2 mx-auto">
           <TabsTrigger
@@ -54,6 +56,7 @@ export default function PricingPage() {
       </Tabs>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {tiers.map((tier) => (
+          // top level card to render the details of each pricing tier.
           <Card
             key={tier.name}
             className={`flex flex-col ${
@@ -91,6 +94,7 @@ export default function PricingPage() {
                 ""
               )}
             </CardHeader>
+            {/* Section for rendering the features associated with each tier of pricing. */}
             <CardContent
               className={`flex-grow flex flex-col ${
                 tier.name === "Booster" ? "text-white" : ""
@@ -133,6 +137,7 @@ export default function PricingPage() {
               </div>
             </CardContent>
             <CardFooter>
+              {/* Continue button. */}
               <Button
                 className={`w-full ${
                   tier.name === "Booster"
